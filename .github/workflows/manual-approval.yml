@@ -15,6 +15,7 @@ jobs:
     production:
         runs-on: ubuntu-latest
         environment: production
+        needs: development
         steps:
             - name: Deploy to the production environment
               run: echo "Deploying to prod"
